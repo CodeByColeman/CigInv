@@ -5229,11 +5229,11 @@ int VL53L0X_InitSensor(VL53L0X_DEV Dev, uint8_t NewAddr)
 {
 	int status;
 
-	HAL_GPIO_WritePin(VL_XSHUT_GPIO_Port, VL_XSHUT_Pin, GPIO_PIN_RESET); //shut down the VL53L0X sensor.
-	HAL_Delay(100); //100
-
-	HAL_GPIO_WritePin(VL_XSHUT_GPIO_Port, VL_XSHUT_Pin, GPIO_PIN_SET); //start up the sensor.
-	HAL_Delay(100);  //24
+//	HAL_GPIO_WritePin(VL1_XSHUT_GPIO_Port, VL1_XSHUT_Pin, GPIO_PIN_RESET); //shut down the VL53L0X sensor.
+//	HAL_Delay(100); //100
+//
+//	HAL_GPIO_WritePin(VL1_XSHUT_GPIO_Port, VL1_XSHUT_Pin, GPIO_PIN_SET); //start up the sensor.
+//	HAL_Delay(100);  //24
 
 	status=VL53L0X_IsPresent(Dev);
 	if(!status)

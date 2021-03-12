@@ -150,6 +150,7 @@ sensor1             0x160             src/main.o
 huart2              0x40              src/main.o
 __lock___at_quick_exit_mutex
                     0x1               /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+sensor2             0x160             src/main.o
 __lock___dd_hash_mutex
                     0x1               /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
 __lock___tz_mutex   0x1               /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
@@ -19000,7 +19001,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 src/stm32f4xx_hal_msp.o
  .debug_macro   0x0000000000000000       0x29 src/stm32f4xx_hal_msp.o
  .debug_macro   0x0000000000000000      0x1e1 src/stm32f4xx_hal_msp.o
- .debug_macro   0x0000000000000000       0x64 src/stm32f4xx_hal_msp.o
+ .debug_macro   0x0000000000000000       0x70 src/stm32f4xx_hal_msp.o
  .group         0x0000000000000000        0x8 src/stm32f4xx_it.o
  .group         0x0000000000000000        0x8 src/stm32f4xx_it.o
  .group         0x0000000000000000        0x8 src/stm32f4xx_it.o
@@ -19215,7 +19216,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 src/stm32f4xx_it.o
  .debug_macro   0x0000000000000000       0x29 src/stm32f4xx_it.o
  .debug_macro   0x0000000000000000      0x1e1 src/stm32f4xx_it.o
- .debug_macro   0x0000000000000000       0x64 src/stm32f4xx_it.o
+ .debug_macro   0x0000000000000000       0x70 src/stm32f4xx_it.o
  .group         0x0000000000000000        0x8 src/syscalls.o
  .group         0x0000000000000000        0x8 src/syscalls.o
  .group         0x0000000000000000        0x8 src/syscalls.o
@@ -19793,7 +19794,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 src/vl53l0x_class.o
  .debug_macro   0x0000000000000000       0x29 src/vl53l0x_class.o
  .debug_macro   0x0000000000000000      0x1e1 src/vl53l0x_class.o
- .debug_macro   0x0000000000000000       0x64 src/vl53l0x_class.o
+ .debug_macro   0x0000000000000000       0x70 src/vl53l0x_class.o
  .debug_macro   0x0000000000000000       0x76 src/vl53l0x_class.o
  .debug_macro   0x0000000000000000      0x29c src/vl53l0x_class.o
  .debug_macro   0x0000000000000000      0x203 src/vl53l0x_class.o
@@ -20223,7 +20224,7 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
                 0x0000000008000000                g_pfnVectors
                 0x00000000080001c4                . = ALIGN (0x4)
 
-.text           0x0000000008000200     0xf4d8
+.text           0x0000000008000200     0xf578
                 0x0000000008000200                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000200       0x6c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -20394,793 +20395,792 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
  .text.__io_putchar
                 0x00000000080039fc       0x24 src/main.o
                 0x00000000080039fc                __io_putchar
- .text.main     0x0000000008003a20       0x90 src/main.o
+ .text.main     0x0000000008003a20      0x160 src/main.o
                 0x0000000008003a20                main
  .text.SystemClock_Config
-                0x0000000008003ab0       0xd4 src/main.o
-                0x0000000008003ab0                SystemClock_Config
+                0x0000000008003b80       0xd4 src/main.o
+                0x0000000008003b80                SystemClock_Config
  .text.MX_I2C1_Init
-                0x0000000008003b84       0x5c src/main.o
+                0x0000000008003c54       0x5c src/main.o
  .text.MX_USART2_UART_Init
-                0x0000000008003be0       0x54 src/main.o
+                0x0000000008003cb0       0x54 src/main.o
  .text.MX_GPIO_Init
-                0x0000000008003c34      0x108 src/main.o
+                0x0000000008003d04      0x128 src/main.o
  .text._Error_Handler
-                0x0000000008003d3c       0x28 src/main.o
-                0x0000000008003d3c                _Error_Handler
+                0x0000000008003e2c       0x28 src/main.o
+                0x0000000008003e2c                _Error_Handler
  .text.VL53L0X_Start
-                0x0000000008003d64       0x74 src/main.o
-                0x0000000008003d64                VL53L0X_Start
+                0x0000000008003e54       0x50 src/main.o
+                0x0000000008003e54                VL53L0X_Start
  .text.Error_Handler
-                0x0000000008003dd8        0x6 src/main.o
-                0x0000000008003dd8                Error_Handler
- *fill*         0x0000000008003dde        0x2 
+                0x0000000008003ea4        0x6 src/main.o
+                0x0000000008003ea4                Error_Handler
+ *fill*         0x0000000008003eaa        0x2 
  .text.HAL_I2C_MspInit
-                0x0000000008003de0       0x90 src/stm32f4xx_hal_msp.o
-                0x0000000008003de0                HAL_I2C_MspInit
+                0x0000000008003eac       0x90 src/stm32f4xx_hal_msp.o
+                0x0000000008003eac                HAL_I2C_MspInit
  .text.HAL_UART_MspInit
-                0x0000000008003e70       0x90 src/stm32f4xx_hal_msp.o
-                0x0000000008003e70                HAL_UART_MspInit
+                0x0000000008003f3c       0x90 src/stm32f4xx_hal_msp.o
+                0x0000000008003f3c                HAL_UART_MspInit
  .text.NMI_Handler
-                0x0000000008003f00        0xe src/stm32f4xx_it.o
-                0x0000000008003f00                NMI_Handler
+                0x0000000008003fcc        0xe src/stm32f4xx_it.o
+                0x0000000008003fcc                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008003f0e        0x6 src/stm32f4xx_it.o
-                0x0000000008003f0e                HardFault_Handler
+                0x0000000008003fda        0x6 src/stm32f4xx_it.o
+                0x0000000008003fda                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008003f14        0x6 src/stm32f4xx_it.o
-                0x0000000008003f14                MemManage_Handler
+                0x0000000008003fe0        0x6 src/stm32f4xx_it.o
+                0x0000000008003fe0                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008003f1a        0x6 src/stm32f4xx_it.o
-                0x0000000008003f1a                BusFault_Handler
+                0x0000000008003fe6        0x6 src/stm32f4xx_it.o
+                0x0000000008003fe6                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008003f20        0x6 src/stm32f4xx_it.o
-                0x0000000008003f20                UsageFault_Handler
+                0x0000000008003fec        0x6 src/stm32f4xx_it.o
+                0x0000000008003fec                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008003f26        0xe src/stm32f4xx_it.o
-                0x0000000008003f26                SVC_Handler
+                0x0000000008003ff2        0xe src/stm32f4xx_it.o
+                0x0000000008003ff2                SVC_Handler
  .text.DebugMon_Handler
-                0x0000000008003f34        0xe src/stm32f4xx_it.o
-                0x0000000008003f34                DebugMon_Handler
+                0x0000000008004000        0xe src/stm32f4xx_it.o
+                0x0000000008004000                DebugMon_Handler
  .text.PendSV_Handler
-                0x0000000008003f42        0xe src/stm32f4xx_it.o
-                0x0000000008003f42                PendSV_Handler
+                0x000000000800400e        0xe src/stm32f4xx_it.o
+                0x000000000800400e                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008003f50        0xc src/stm32f4xx_it.o
-                0x0000000008003f50                SysTick_Handler
- .text._read    0x0000000008003f5c       0x3a src/syscalls.o
-                0x0000000008003f5c                _read
- .text._write   0x0000000008003f96       0x38 src/syscalls.o
-                0x0000000008003f96                _write
- .text._close   0x0000000008003fce       0x18 src/syscalls.o
-                0x0000000008003fce                _close
- .text._fstat   0x0000000008003fe6       0x20 src/syscalls.o
-                0x0000000008003fe6                _fstat
- .text._isatty  0x0000000008004006       0x16 src/syscalls.o
-                0x0000000008004006                _isatty
- .text._lseek   0x000000000800401c       0x1a src/syscalls.o
-                0x000000000800401c                _lseek
- *fill*         0x0000000008004036        0x2 
- .text._sbrk    0x0000000008004038       0x58 src/sysmem.o
-                0x0000000008004038                _sbrk
+                0x000000000800401c        0xc src/stm32f4xx_it.o
+                0x000000000800401c                SysTick_Handler
+ .text._read    0x0000000008004028       0x3a src/syscalls.o
+                0x0000000008004028                _read
+ .text._write   0x0000000008004062       0x38 src/syscalls.o
+                0x0000000008004062                _write
+ .text._close   0x000000000800409a       0x18 src/syscalls.o
+                0x000000000800409a                _close
+ .text._fstat   0x00000000080040b2       0x20 src/syscalls.o
+                0x00000000080040b2                _fstat
+ .text._isatty  0x00000000080040d2       0x16 src/syscalls.o
+                0x00000000080040d2                _isatty
+ .text._lseek   0x00000000080040e8       0x1a src/syscalls.o
+                0x00000000080040e8                _lseek
+ *fill*         0x0000000008004102        0x2 
+ .text._sbrk    0x0000000008004104       0x58 src/sysmem.o
+                0x0000000008004104                _sbrk
  .text.SystemInit
-                0x0000000008004090       0x2c src/system_stm32f4xx.o
-                0x0000000008004090                SystemInit
+                0x000000000800415c       0x2c src/system_stm32f4xx.o
+                0x000000000800415c                SystemInit
  .text.VL53L0X_Prepare
-                0x00000000080040bc       0x62 src/vl53l0x_class.o
-                0x00000000080040bc                VL53L0X_Prepare
+                0x0000000008004188       0x62 src/vl53l0x_class.o
+                0x0000000008004188                VL53L0X_Prepare
  .text.VL53L0X_GetDistance
-                0x000000000800411e       0x60 src/vl53l0x_class.o
-                0x000000000800411e                VL53L0X_GetDistance
+                0x00000000080041ea       0x60 src/vl53l0x_class.o
+                0x00000000080041ea                VL53L0X_GetDistance
  .text.SetDeviceAddress
-                0x000000000800417e       0x34 src/vl53l0x_class.o
-                0x000000000800417e                SetDeviceAddress
+                0x000000000800424a       0x34 src/vl53l0x_class.o
+                0x000000000800424a                SetDeviceAddress
  .text.VL53L0X_device_read_strobe
-                0x00000000080041b2       0x86 src/vl53l0x_class.o
-                0x00000000080041b2                VL53L0X_device_read_strobe
+                0x000000000800427e       0x86 src/vl53l0x_class.o
+                0x000000000800427e                VL53L0X_device_read_strobe
  .text.VL53L0X_get_info_from_device
-                0x0000000008004238      0x99a src/vl53l0x_class.o
-                0x0000000008004238                VL53L0X_get_info_from_device
+                0x0000000008004304      0x99a src/vl53l0x_class.o
+                0x0000000008004304                VL53L0X_get_info_from_device
  .text.VL53L0X_get_offset_calibration_data_micro_meter
-                0x0000000008004bd2       0x7e src/vl53l0x_class.o
-                0x0000000008004bd2                VL53L0X_get_offset_calibration_data_micro_meter
+                0x0000000008004c9e       0x7e src/vl53l0x_class.o
+                0x0000000008004c9e                VL53L0X_get_offset_calibration_data_micro_meter
  .text.VL53L0X_GetOffsetCalibrationDataMicroMeter
-                0x0000000008004c50       0x26 src/vl53l0x_class.o
-                0x0000000008004c50                VL53L0X_GetOffsetCalibrationDataMicroMeter
+                0x0000000008004d1c       0x26 src/vl53l0x_class.o
+                0x0000000008004d1c                VL53L0X_GetOffsetCalibrationDataMicroMeter
  .text.VL53L0X_GetDeviceMode
-                0x0000000008004c76       0x26 src/vl53l0x_class.o
-                0x0000000008004c76                VL53L0X_GetDeviceMode
+                0x0000000008004d42       0x26 src/vl53l0x_class.o
+                0x0000000008004d42                VL53L0X_GetDeviceMode
  .text.VL53L0X_GetInterMeasurementPeriodMilliSeconds
-                0x0000000008004c9c       0x68 src/vl53l0x_class.o
-                0x0000000008004c9c                VL53L0X_GetInterMeasurementPeriodMilliSeconds
+                0x0000000008004d68       0x68 src/vl53l0x_class.o
+                0x0000000008004d68                VL53L0X_GetInterMeasurementPeriodMilliSeconds
  .text.VL53L0X_GetXTalkCompensationRateMegaCps
-                0x0000000008004d04       0x66 src/vl53l0x_class.o
-                0x0000000008004d04                VL53L0X_GetXTalkCompensationRateMegaCps
- *fill*         0x0000000008004d6a        0x2 
+                0x0000000008004dd0       0x66 src/vl53l0x_class.o
+                0x0000000008004dd0                VL53L0X_GetXTalkCompensationRateMegaCps
+ *fill*         0x0000000008004e36        0x2 
  .text.VL53L0X_GetLimitCheckValue
-                0x0000000008004d6c      0x11c src/vl53l0x_class.o
-                0x0000000008004d6c                VL53L0X_GetLimitCheckValue
+                0x0000000008004e38      0x11c src/vl53l0x_class.o
+                0x0000000008004e38                VL53L0X_GetLimitCheckValue
  .text.VL53L0X_GetLimitCheckEnable
-                0x0000000008004e88       0x46 src/vl53l0x_class.o
-                0x0000000008004e88                VL53L0X_GetLimitCheckEnable
+                0x0000000008004f54       0x46 src/vl53l0x_class.o
+                0x0000000008004f54                VL53L0X_GetLimitCheckEnable
  .text.VL53L0X_GetWrapAroundCheckEnable
-                0x0000000008004ece       0x64 src/vl53l0x_class.o
-                0x0000000008004ece                VL53L0X_GetWrapAroundCheckEnable
- *fill*         0x0000000008004f32        0x2 
+                0x0000000008004f9a       0x64 src/vl53l0x_class.o
+                0x0000000008004f9a                VL53L0X_GetWrapAroundCheckEnable
+ *fill*         0x0000000008004ffe        0x2 
  .text.sequence_step_enabled
-                0x0000000008004f34       0xa4 src/vl53l0x_class.o
-                0x0000000008004f34                sequence_step_enabled
+                0x0000000008005000       0xa4 src/vl53l0x_class.o
+                0x0000000008005000                sequence_step_enabled
  .text.VL53L0X_GetSequenceStepEnables
-                0x0000000008004fd8       0xb0 src/vl53l0x_class.o
-                0x0000000008004fd8                VL53L0X_GetSequenceStepEnables
+                0x00000000080050a4       0xb0 src/vl53l0x_class.o
+                0x00000000080050a4                VL53L0X_GetSequenceStepEnables
  .text.VL53L0X_decode_vcsel_period
-                0x0000000008005088       0x26 src/vl53l0x_class.o
-                0x0000000008005088                VL53L0X_decode_vcsel_period
+                0x0000000008005154       0x26 src/vl53l0x_class.o
+                0x0000000008005154                VL53L0X_decode_vcsel_period
  .text.VL53L0X_encode_vcsel_period
-                0x00000000080050ae       0x26 src/vl53l0x_class.o
-                0x00000000080050ae                VL53L0X_encode_vcsel_period
+                0x000000000800517a       0x26 src/vl53l0x_class.o
+                0x000000000800517a                VL53L0X_encode_vcsel_period
  .text.VL53L0X_set_vcsel_pulse_period
-                0x00000000080050d4      0x50e src/vl53l0x_class.o
-                0x00000000080050d4                VL53L0X_set_vcsel_pulse_period
+                0x00000000080051a0      0x50e src/vl53l0x_class.o
+                0x00000000080051a0                VL53L0X_set_vcsel_pulse_period
  .text.VL53L0X_SetVcselPulsePeriod
-                0x00000000080055e2       0x30 src/vl53l0x_class.o
-                0x00000000080055e2                VL53L0X_SetVcselPulsePeriod
+                0x00000000080056ae       0x30 src/vl53l0x_class.o
+                0x00000000080056ae                VL53L0X_SetVcselPulsePeriod
  .text.VL53L0X_get_vcsel_pulse_period
-                0x0000000008005612       0x6e src/vl53l0x_class.o
-                0x0000000008005612                VL53L0X_get_vcsel_pulse_period
+                0x00000000080056de       0x6e src/vl53l0x_class.o
+                0x00000000080056de                VL53L0X_get_vcsel_pulse_period
  .text.VL53L0X_GetVcselPulsePeriod
-                0x0000000008005680       0x2e src/vl53l0x_class.o
-                0x0000000008005680                VL53L0X_GetVcselPulsePeriod
+                0x000000000800574c       0x2e src/vl53l0x_class.o
+                0x000000000800574c                VL53L0X_GetVcselPulsePeriod
  .text.VL53L0X_decode_timeout
-                0x00000000080056ae       0x2c src/vl53l0x_class.o
-                0x00000000080056ae                VL53L0X_decode_timeout
+                0x000000000800577a       0x2c src/vl53l0x_class.o
+                0x000000000800577a                VL53L0X_decode_timeout
  .text.VL53L0X_calc_macro_period_ps
-                0x00000000080056da       0x3a src/vl53l0x_class.o
-                0x00000000080056da                VL53L0X_calc_macro_period_ps
+                0x00000000080057a6       0x3a src/vl53l0x_class.o
+                0x00000000080057a6                VL53L0X_calc_macro_period_ps
  .text.VL53L0X_calc_timeout_us
-                0x0000000008005714       0x54 src/vl53l0x_class.o
-                0x0000000008005714                VL53L0X_calc_timeout_us
+                0x00000000080057e0       0x54 src/vl53l0x_class.o
+                0x00000000080057e0                VL53L0X_calc_timeout_us
  .text.get_sequence_step_timeout
-                0x0000000008005768      0x1c2 src/vl53l0x_class.o
-                0x0000000008005768                get_sequence_step_timeout
+                0x0000000008005834      0x1c2 src/vl53l0x_class.o
+                0x0000000008005834                get_sequence_step_timeout
  .text.VL53L0X_get_measurement_timing_budget_micro_seconds
-                0x000000000800592a      0x162 src/vl53l0x_class.o
-                0x000000000800592a                VL53L0X_get_measurement_timing_budget_micro_seconds
+                0x00000000080059f6      0x162 src/vl53l0x_class.o
+                0x00000000080059f6                VL53L0X_get_measurement_timing_budget_micro_seconds
  .text.VL53L0X_GetMeasurementTimingBudgetMicroSeconds
-                0x0000000008005a8c       0x26 src/vl53l0x_class.o
-                0x0000000008005a8c                VL53L0X_GetMeasurementTimingBudgetMicroSeconds
+                0x0000000008005b58       0x26 src/vl53l0x_class.o
+                0x0000000008005b58                VL53L0X_GetMeasurementTimingBudgetMicroSeconds
  .text.VL53L0X_GetDeviceParameters
-                0x0000000008005ab2      0x120 src/vl53l0x_class.o
-                0x0000000008005ab2                VL53L0X_GetDeviceParameters
- *fill*         0x0000000008005bd2        0x2 
+                0x0000000008005b7e      0x120 src/vl53l0x_class.o
+                0x0000000008005b7e                VL53L0X_GetDeviceParameters
+ *fill*         0x0000000008005c9e        0x2 
  .text.VL53L0X_SetLimitCheckValue
-                0x0000000008005bd4       0xc4 src/vl53l0x_class.o
-                0x0000000008005bd4                VL53L0X_SetLimitCheckValue
+                0x0000000008005ca0       0xc4 src/vl53l0x_class.o
+                0x0000000008005ca0                VL53L0X_SetLimitCheckValue
  .text.VL53L0X_DataInit
-                0x0000000008005c98      0x2c8 src/vl53l0x_class.o
-                0x0000000008005c98                VL53L0X_DataInit
+                0x0000000008005d64      0x2c8 src/vl53l0x_class.o
+                0x0000000008005d64                VL53L0X_DataInit
  .text.VL53L0X_check_part_used
-                0x0000000008005f60       0x6a src/vl53l0x_class.o
-                0x0000000008005f60                VL53L0X_check_part_used
- *fill*         0x0000000008005fca        0x2 
+                0x000000000800602c       0x6a src/vl53l0x_class.o
+                0x000000000800602c                VL53L0X_check_part_used
+ *fill*         0x0000000008006096        0x2 
  .text.VL53L0X_get_device_info
-                0x0000000008005fcc      0x108 src/vl53l0x_class.o
-                0x0000000008005fcc                VL53L0X_get_device_info
+                0x0000000008006098      0x108 src/vl53l0x_class.o
+                0x0000000008006098                VL53L0X_get_device_info
  .text.VL53L0X_GetDeviceInfo
-                0x00000000080060d4       0x26 src/vl53l0x_class.o
-                0x00000000080060d4                VL53L0X_GetDeviceInfo
+                0x00000000080061a0       0x26 src/vl53l0x_class.o
+                0x00000000080061a0                VL53L0X_GetDeviceInfo
  .text.VL53L0X_GetInterruptMaskStatus
-                0x00000000080060fa       0x44 src/vl53l0x_class.o
-                0x00000000080060fa                VL53L0X_GetInterruptMaskStatus
+                0x00000000080061c6       0x44 src/vl53l0x_class.o
+                0x00000000080061c6                VL53L0X_GetInterruptMaskStatus
  .text.VL53L0X_GetMeasurementDataReady
-                0x000000000800613e       0x80 src/vl53l0x_class.o
-                0x000000000800613e                VL53L0X_GetMeasurementDataReady
+                0x000000000800620a       0x80 src/vl53l0x_class.o
+                0x000000000800620a                VL53L0X_GetMeasurementDataReady
  .text.VL53L0X_PollingDelay
-                0x00000000080061be       0x1e src/vl53l0x_class.o
-                0x00000000080061be                VL53L0X_PollingDelay
+                0x000000000800628a       0x1e src/vl53l0x_class.o
+                0x000000000800628a                VL53L0X_PollingDelay
  .text.VL53L0X_measurement_poll_for_completion
-                0x00000000080061dc       0x60 src/vl53l0x_class.o
-                0x00000000080061dc                VL53L0X_measurement_poll_for_completion
+                0x00000000080062a8       0x60 src/vl53l0x_class.o
+                0x00000000080062a8                VL53L0X_measurement_poll_for_completion
  .text.VL53L0X_ClearInterruptMask
-                0x000000000800623c       0x80 src/vl53l0x_class.o
-                0x000000000800623c                VL53L0X_ClearInterruptMask
+                0x0000000008006308       0x80 src/vl53l0x_class.o
+                0x0000000008006308                VL53L0X_ClearInterruptMask
  .text.VL53L0X_perform_single_ref_calibration
-                0x00000000080062bc       0x76 src/vl53l0x_class.o
-                0x00000000080062bc                VL53L0X_perform_single_ref_calibration
+                0x0000000008006388       0x76 src/vl53l0x_class.o
+                0x0000000008006388                VL53L0X_perform_single_ref_calibration
  .text.VL53L0X_ref_calibration_io
-                0x0000000008006332      0x132 src/vl53l0x_class.o
-                0x0000000008006332                VL53L0X_ref_calibration_io
+                0x00000000080063fe      0x132 src/vl53l0x_class.o
+                0x00000000080063fe                VL53L0X_ref_calibration_io
  .text.VL53L0X_perform_vhv_calibration
-                0x0000000008006464       0xce src/vl53l0x_class.o
-                0x0000000008006464                VL53L0X_perform_vhv_calibration
+                0x0000000008006530       0xce src/vl53l0x_class.o
+                0x0000000008006530                VL53L0X_perform_vhv_calibration
  .text.VL53L0X_perform_phase_calibration
-                0x0000000008006532       0xca src/vl53l0x_class.o
-                0x0000000008006532                VL53L0X_perform_phase_calibration
+                0x00000000080065fe       0xca src/vl53l0x_class.o
+                0x00000000080065fe                VL53L0X_perform_phase_calibration
  .text.VL53L0X_perform_ref_calibration
-                0x00000000080065fc       0x7a src/vl53l0x_class.o
-                0x00000000080065fc                VL53L0X_perform_ref_calibration
+                0x00000000080066c8       0x7a src/vl53l0x_class.o
+                0x00000000080066c8                VL53L0X_perform_ref_calibration
  .text.get_next_good_spad
-                0x0000000008006676       0xbc src/vl53l0x_class.o
-                0x0000000008006676                get_next_good_spad
- *fill*         0x0000000008006732        0x2 
+                0x0000000008006742       0xbc src/vl53l0x_class.o
+                0x0000000008006742                get_next_good_spad
+ *fill*         0x00000000080067fe        0x2 
  .text.is_aperture
-                0x0000000008006734       0x34 src/vl53l0x_class.o
-                0x0000000008006734                is_aperture
+                0x0000000008006800       0x34 src/vl53l0x_class.o
+                0x0000000008006800                is_aperture
  .text.enable_spad_bit
-                0x0000000008006768       0x70 src/vl53l0x_class.o
-                0x0000000008006768                enable_spad_bit
+                0x0000000008006834       0x70 src/vl53l0x_class.o
+                0x0000000008006834                enable_spad_bit
  .text.set_ref_spad_map
-                0x00000000080067d8       0x26 src/vl53l0x_class.o
-                0x00000000080067d8                set_ref_spad_map
+                0x00000000080068a4       0x26 src/vl53l0x_class.o
+                0x00000000080068a4                set_ref_spad_map
  .text.get_ref_spad_map
-                0x00000000080067fe       0x26 src/vl53l0x_class.o
-                0x00000000080067fe                get_ref_spad_map
+                0x00000000080068ca       0x26 src/vl53l0x_class.o
+                0x00000000080068ca                get_ref_spad_map
  .text.enable_ref_spads
-                0x0000000008006824       0xf8 src/vl53l0x_class.o
-                0x0000000008006824                enable_ref_spads
+                0x00000000080068f0       0xf8 src/vl53l0x_class.o
+                0x00000000080068f0                enable_ref_spads
  .text.VL53L0X_SetDeviceMode
-                0x000000000800691c       0x90 src/vl53l0x_class.o
-                0x000000000800691c                VL53L0X_SetDeviceMode
+                0x00000000080069e8       0x90 src/vl53l0x_class.o
+                0x00000000080069e8                VL53L0X_SetDeviceMode
  .text.VL53L0X_GetInterruptThresholds
-                0x00000000080069ac       0x6c src/vl53l0x_class.o
-                0x00000000080069ac                VL53L0X_GetInterruptThresholds
+                0x0000000008006a78       0x6c src/vl53l0x_class.o
+                0x0000000008006a78                VL53L0X_GetInterruptThresholds
  .text.VL53L0X_load_tuning_settings
-                0x0000000008006a18      0x1c4 src/vl53l0x_class.o
-                0x0000000008006a18                VL53L0X_load_tuning_settings
+                0x0000000008006ae4      0x1c4 src/vl53l0x_class.o
+                0x0000000008006ae4                VL53L0X_load_tuning_settings
  .text.VL53L0X_CheckAndLoadInterruptSettings
-                0x0000000008006bdc       0xcc src/vl53l0x_class.o
-                0x0000000008006bdc                VL53L0X_CheckAndLoadInterruptSettings
+                0x0000000008006ca8       0xcc src/vl53l0x_class.o
+                0x0000000008006ca8                VL53L0X_CheckAndLoadInterruptSettings
  .text.VL53L0X_StartMeasurement
-                0x0000000008006ca8      0x17e src/vl53l0x_class.o
-                0x0000000008006ca8                VL53L0X_StartMeasurement
+                0x0000000008006d74      0x17e src/vl53l0x_class.o
+                0x0000000008006d74                VL53L0X_StartMeasurement
  .text.VL53L0X_PerformSingleMeasurement
-                0x0000000008006e26       0x68 src/vl53l0x_class.o
-                0x0000000008006e26                VL53L0X_PerformSingleMeasurement
+                0x0000000008006ef2       0x68 src/vl53l0x_class.o
+                0x0000000008006ef2                VL53L0X_PerformSingleMeasurement
  .text.VL53L0X_GetXTalkCompensationEnable
-                0x0000000008006e8e       0x2a src/vl53l0x_class.o
-                0x0000000008006e8e                VL53L0X_GetXTalkCompensationEnable
+                0x0000000008006f5a       0x2a src/vl53l0x_class.o
+                0x0000000008006f5a                VL53L0X_GetXTalkCompensationEnable
  .text.VL53L0X_get_total_xtalk_rate
-                0x0000000008006eb8       0x5e src/vl53l0x_class.o
-                0x0000000008006eb8                VL53L0X_get_total_xtalk_rate
+                0x0000000008006f84       0x5e src/vl53l0x_class.o
+                0x0000000008006f84                VL53L0X_get_total_xtalk_rate
  .text.VL53L0X_get_total_signal_rate
-                0x0000000008006f16       0x4a src/vl53l0x_class.o
-                0x0000000008006f16                VL53L0X_get_total_signal_rate
+                0x0000000008006fe2       0x4a src/vl53l0x_class.o
+                0x0000000008006fe2                VL53L0X_get_total_signal_rate
  .text.VL53L0X_calc_timeout_mclks
-                0x0000000008006f60       0x54 src/vl53l0x_class.o
-                0x0000000008006f60                VL53L0X_calc_timeout_mclks
+                0x000000000800702c       0x54 src/vl53l0x_class.o
+                0x000000000800702c                VL53L0X_calc_timeout_mclks
  .text.VL53L0X_isqrt
-                0x0000000008006fb4       0x68 src/vl53l0x_class.o
-                0x0000000008006fb4                VL53L0X_isqrt
+                0x0000000008007080       0x68 src/vl53l0x_class.o
+                0x0000000008007080                VL53L0X_isqrt
  .text.VL53L0X_calc_dmax
-                0x000000000800701c      0x240 src/vl53l0x_class.o
-                0x000000000800701c                VL53L0X_calc_dmax
+                0x00000000080070e8      0x240 src/vl53l0x_class.o
+                0x00000000080070e8                VL53L0X_calc_dmax
  .text.VL53L0X_calc_sigma_estimate
-                0x000000000800725c      0x49c src/vl53l0x_class.o
-                0x000000000800725c                VL53L0X_calc_sigma_estimate
+                0x0000000008007328      0x49c src/vl53l0x_class.o
+                0x0000000008007328                VL53L0X_calc_sigma_estimate
  .text.VL53L0X_get_pal_range_status
-                0x00000000080076f8      0x3b6 src/vl53l0x_class.o
-                0x00000000080076f8                VL53L0X_get_pal_range_status
- *fill*         0x0000000008007aae        0x2 
+                0x00000000080077c4      0x3b6 src/vl53l0x_class.o
+                0x00000000080077c4                VL53L0X_get_pal_range_status
+ *fill*         0x0000000008007b7a        0x2 
  .text.VL53L0X_GetRangingMeasurementData
-                0x0000000008007ab0      0x24c src/vl53l0x_class.o
-                0x0000000008007ab0                VL53L0X_GetRangingMeasurementData
+                0x0000000008007b7c      0x24c src/vl53l0x_class.o
+                0x0000000008007b7c                VL53L0X_GetRangingMeasurementData
  .text.VL53L0X_PerformSingleRangingMeasurement
-                0x0000000008007cfc       0x60 src/vl53l0x_class.o
-                0x0000000008007cfc                VL53L0X_PerformSingleRangingMeasurement
+                0x0000000008007dc8       0x60 src/vl53l0x_class.o
+                0x0000000008007dc8                VL53L0X_PerformSingleRangingMeasurement
  .text.perform_ref_signal_measurement
-                0x0000000008007d5c       0xd4 src/vl53l0x_class.o
-                0x0000000008007d5c                perform_ref_signal_measurement
+                0x0000000008007e28       0xd4 src/vl53l0x_class.o
+                0x0000000008007e28                perform_ref_signal_measurement
  .text.VL53L0X_perform_ref_spad_management
-                0x0000000008007e30      0x418 src/vl53l0x_class.o
-                0x0000000008007e30                VL53L0X_perform_ref_spad_management
+                0x0000000008007efc      0x418 src/vl53l0x_class.o
+                0x0000000008007efc                VL53L0X_perform_ref_spad_management
  .text.VL53L0X_set_reference_spads
-                0x0000000008008248      0x14a src/vl53l0x_class.o
-                0x0000000008008248                VL53L0X_set_reference_spads
+                0x0000000008008314      0x14a src/vl53l0x_class.o
+                0x0000000008008314                VL53L0X_set_reference_spads
  .text.VL53L0X_PerformRefCalibration
-                0x0000000008008392       0x2c src/vl53l0x_class.o
-                0x0000000008008392                VL53L0X_PerformRefCalibration
+                0x000000000800845e       0x2c src/vl53l0x_class.o
+                0x000000000800845e                VL53L0X_PerformRefCalibration
  .text.VL53L0X_PerformRefSpadManagement
-                0x00000000080083be       0x2a src/vl53l0x_class.o
-                0x00000000080083be                VL53L0X_PerformRefSpadManagement
+                0x000000000800848a       0x2a src/vl53l0x_class.o
+                0x000000000800848a                VL53L0X_PerformRefSpadManagement
  .text.VL53L0X_SetDeviceAddress
-                0x00000000080083e8       0x30 src/vl53l0x_class.o
-                0x00000000080083e8                VL53L0X_SetDeviceAddress
+                0x00000000080084b4       0x30 src/vl53l0x_class.o
+                0x00000000080084b4                VL53L0X_SetDeviceAddress
  .text.VL53L0X_SetGpioConfig
-                0x0000000008008418      0x244 src/vl53l0x_class.o
-                0x0000000008008418                VL53L0X_SetGpioConfig
+                0x00000000080084e4      0x244 src/vl53l0x_class.o
+                0x00000000080084e4                VL53L0X_SetGpioConfig
  .text.VL53L0X_GetFractionEnable
-                0x000000000800865c       0x3e src/vl53l0x_class.o
-                0x000000000800865c                VL53L0X_GetFractionEnable
+                0x0000000008008728       0x3e src/vl53l0x_class.o
+                0x0000000008008728                VL53L0X_GetFractionEnable
  .text.VL53L0X_encode_timeout
-                0x000000000800869a       0x58 src/vl53l0x_class.o
-                0x000000000800869a                VL53L0X_encode_timeout
+                0x0000000008008766       0x58 src/vl53l0x_class.o
+                0x0000000008008766                VL53L0X_encode_timeout
  .text.set_sequence_step_timeout
-                0x00000000080086f2      0x1e4 src/vl53l0x_class.o
-                0x00000000080086f2                set_sequence_step_timeout
+                0x00000000080087be      0x1e4 src/vl53l0x_class.o
+                0x00000000080087be                set_sequence_step_timeout
  .text.VL53L0X_set_measurement_timing_budget_micro_seconds
-                0x00000000080088d6      0x1c0 src/vl53l0x_class.o
-                0x00000000080088d6                VL53L0X_set_measurement_timing_budget_micro_seconds
+                0x00000000080089a2      0x1c0 src/vl53l0x_class.o
+                0x00000000080089a2                VL53L0X_set_measurement_timing_budget_micro_seconds
  .text.VL53L0X_SetMeasurementTimingBudgetMicroSeconds
-                0x0000000008008a96       0x26 src/vl53l0x_class.o
-                0x0000000008008a96                VL53L0X_SetMeasurementTimingBudgetMicroSeconds
+                0x0000000008008b62       0x26 src/vl53l0x_class.o
+                0x0000000008008b62                VL53L0X_SetMeasurementTimingBudgetMicroSeconds
  .text.VL53L0X_SetSequenceStepEnable
-                0x0000000008008abc      0x140 src/vl53l0x_class.o
-                0x0000000008008abc                VL53L0X_SetSequenceStepEnable
+                0x0000000008008b88      0x140 src/vl53l0x_class.o
+                0x0000000008008b88                VL53L0X_SetSequenceStepEnable
  .text.VL53L0X_SetLimitCheckEnable
-                0x0000000008008bfc      0x118 src/vl53l0x_class.o
-                0x0000000008008bfc                VL53L0X_SetLimitCheckEnable
+                0x0000000008008cc8      0x118 src/vl53l0x_class.o
+                0x0000000008008cc8                VL53L0X_SetLimitCheckEnable
  .text.VL53L0X_StaticInit
-                0x0000000008008d14      0x2f4 src/vl53l0x_class.o
-                0x0000000008008d14                VL53L0X_StaticInit
+                0x0000000008008de0      0x2f4 src/vl53l0x_class.o
+                0x0000000008008de0                VL53L0X_StaticInit
  .text.VL53L0X_StopMeasurement
-                0x0000000008009008       0x90 src/vl53l0x_class.o
-                0x0000000008009008                VL53L0X_StopMeasurement
+                0x00000000080090d4       0x90 src/vl53l0x_class.o
+                0x00000000080090d4                VL53L0X_StopMeasurement
  .text.VL53L0X_GetStopCompletedStatus
-                0x0000000008009098       0xd2 src/vl53l0x_class.o
-                0x0000000008009098                VL53L0X_GetStopCompletedStatus
+                0x0000000008009164       0xd2 src/vl53l0x_class.o
+                0x0000000008009164                VL53L0X_GetStopCompletedStatus
  .text.VL53L0X_WriteMulti
-                0x000000000800916a       0x32 src/vl53l0x_class.o
-                0x000000000800916a                VL53L0X_WriteMulti
+                0x0000000008009236       0x32 src/vl53l0x_class.o
+                0x0000000008009236                VL53L0X_WriteMulti
  .text.VL53L0X_ReadMulti
-                0x000000000800919c       0x3e src/vl53l0x_class.o
-                0x000000000800919c                VL53L0X_ReadMulti
+                0x0000000008009268       0x3e src/vl53l0x_class.o
+                0x0000000008009268                VL53L0X_ReadMulti
  .text.VL53L0X_WrByte
-                0x00000000080091da       0x30 src/vl53l0x_class.o
-                0x00000000080091da                VL53L0X_WrByte
+                0x00000000080092a6       0x30 src/vl53l0x_class.o
+                0x00000000080092a6                VL53L0X_WrByte
  .text.VL53L0X_WrWord
-                0x000000000800920a       0x42 src/vl53l0x_class.o
-                0x000000000800920a                VL53L0X_WrWord
+                0x00000000080092d6       0x42 src/vl53l0x_class.o
+                0x00000000080092d6                VL53L0X_WrWord
  .text.VL53L0X_RdByte
-                0x000000000800924c       0x38 src/vl53l0x_class.o
-                0x000000000800924c                VL53L0X_RdByte
+                0x0000000008009318       0x38 src/vl53l0x_class.o
+                0x0000000008009318                VL53L0X_RdByte
  .text.VL53L0X_RdWord
-                0x0000000008009284       0x52 src/vl53l0x_class.o
-                0x0000000008009284                VL53L0X_RdWord
+                0x0000000008009350       0x52 src/vl53l0x_class.o
+                0x0000000008009350                VL53L0X_RdWord
  .text.VL53L0X_RdDWord
-                0x00000000080092d6       0x54 src/vl53l0x_class.o
-                0x00000000080092d6                VL53L0X_RdDWord
+                0x00000000080093a2       0x54 src/vl53l0x_class.o
+                0x00000000080093a2                VL53L0X_RdDWord
  .text.VL53L0X_UpdateByte
-                0x000000000800932a       0x6c src/vl53l0x_class.o
-                0x000000000800932a                VL53L0X_UpdateByte
- *fill*         0x0000000008009396        0x2 
+                0x00000000080093f6       0x6c src/vl53l0x_class.o
+                0x00000000080093f6                VL53L0X_UpdateByte
+ *fill*         0x0000000008009462        0x2 
  .text.VL53L0X_I2CRead
-                0x0000000008009398       0x80 src/vl53l0x_class.o
-                0x0000000008009398                VL53L0X_I2CRead
+                0x0000000008009464       0x80 src/vl53l0x_class.o
+                0x0000000008009464                VL53L0X_I2CRead
  .text.VL53L0X_I2CWrite
-                0x0000000008009418       0x5c src/vl53l0x_class.o
-                0x0000000008009418                VL53L0X_I2CWrite
+                0x00000000080094e4       0x5c src/vl53l0x_class.o
+                0x00000000080094e4                VL53L0X_I2CWrite
  .text.VL53L0X_ReadID
-                0x0000000008009474       0x3c src/vl53l0x_class.o
-                0x0000000008009474                VL53L0X_ReadID
+                0x0000000008009540       0x3c src/vl53l0x_class.o
+                0x0000000008009540                VL53L0X_ReadID
  .text.VL53L0X_WaitStopCompleted
-                0x00000000080094b0       0x66 src/vl53l0x_class.o
-                0x00000000080094b0                VL53L0X_WaitStopCompleted
+                0x000000000800957c       0x66 src/vl53l0x_class.o
+                0x000000000800957c                VL53L0X_WaitStopCompleted
  .text.VL53L0X_IsPresent
-                0x0000000008009516       0x1a src/vl53l0x_class.o
-                0x0000000008009516                VL53L0X_IsPresent
+                0x00000000080095e2       0x1a src/vl53l0x_class.o
+                0x00000000080095e2                VL53L0X_IsPresent
  .text.VL53L0X_InitSensor
-                0x0000000008009530       0xd8 src/vl53l0x_class.o
-                0x0000000008009530                VL53L0X_InitSensor
+                0x00000000080095fc       0xb0 src/vl53l0x_class.o
+                0x00000000080095fc                VL53L0X_InitSensor
  .text.VL53L0X_StartMeasurementSimplified
-                0x0000000008009608      0x14c src/vl53l0x_class.o
-                0x0000000008009608                VL53L0X_StartMeasurementSimplified
+                0x00000000080096ac      0x14c src/vl53l0x_class.o
+                0x00000000080096ac                VL53L0X_StartMeasurementSimplified
  .text.VL53L0X_GetMeasurementSimplified
-                0x0000000008009754       0x64 src/vl53l0x_class.o
-                0x0000000008009754                VL53L0X_GetMeasurementSimplified
+                0x00000000080097f8       0x64 src/vl53l0x_class.o
+                0x00000000080097f8                VL53L0X_GetMeasurementSimplified
  .text.VL53L0X_StopMeasurementSimplified
-                0x00000000080097b8       0x6c src/vl53l0x_class.o
-                0x00000000080097b8                VL53L0X_StopMeasurementSimplified
+                0x000000000800985c       0x6c src/vl53l0x_class.o
+                0x000000000800985c                VL53L0X_StopMeasurementSimplified
  .text.Reset_Handler
-                0x0000000008009824       0x50 startup/startup_stm32f446xx.o
-                0x0000000008009824                Reset_Handler
+                0x00000000080098c8       0x50 startup/startup_stm32f446xx.o
+                0x00000000080098c8                Reset_Handler
  .text.Default_Handler
-                0x0000000008009874        0x2 startup/startup_stm32f446xx.o
-                0x0000000008009874                RTC_Alarm_IRQHandler
-                0x0000000008009874                EXTI2_IRQHandler
-                0x0000000008009874                TIM8_CC_IRQHandler
-                0x0000000008009874                SPI4_IRQHandler
-                0x0000000008009874                TIM1_CC_IRQHandler
-                0x0000000008009874                DMA2_Stream5_IRQHandler
-                0x0000000008009874                DMA1_Stream5_IRQHandler
-                0x0000000008009874                PVD_IRQHandler
-                0x0000000008009874                SDIO_IRQHandler
-                0x0000000008009874                TAMP_STAMP_IRQHandler
-                0x0000000008009874                CAN2_RX1_IRQHandler
-                0x0000000008009874                EXTI3_IRQHandler
-                0x0000000008009874                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0000000008009874                TIM1_UP_TIM10_IRQHandler
-                0x0000000008009874                TIM8_UP_TIM13_IRQHandler
-                0x0000000008009874                I2C3_ER_IRQHandler
-                0x0000000008009874                FMPI2C1_Event_IRQHandler
-                0x0000000008009874                EXTI0_IRQHandler
-                0x0000000008009874                I2C2_EV_IRQHandler
-                0x0000000008009874                DMA1_Stream2_IRQHandler
-                0x0000000008009874                CAN1_RX0_IRQHandler
-                0x0000000008009874                FPU_IRQHandler
-                0x0000000008009874                OTG_HS_WKUP_IRQHandler
-                0x0000000008009874                CAN2_SCE_IRQHandler
-                0x0000000008009874                DMA2_Stream2_IRQHandler
-                0x0000000008009874                SPI1_IRQHandler
-                0x0000000008009874                TIM6_DAC_IRQHandler
-                0x0000000008009874                TIM1_BRK_TIM9_IRQHandler
-                0x0000000008009874                DCMI_IRQHandler
-                0x0000000008009874                CAN2_RX0_IRQHandler
-                0x0000000008009874                DMA2_Stream3_IRQHandler
-                0x0000000008009874                SAI2_IRQHandler
-                0x0000000008009874                USART6_IRQHandler
-                0x0000000008009874                USART3_IRQHandler
-                0x0000000008009874                CAN1_RX1_IRQHandler
-                0x0000000008009874                UART5_IRQHandler
-                0x0000000008009874                DMA2_Stream0_IRQHandler
-                0x0000000008009874                TIM4_IRQHandler
-                0x0000000008009874                QUADSPI_IRQHandler
-                0x0000000008009874                I2C1_EV_IRQHandler
-                0x0000000008009874                DMA1_Stream6_IRQHandler
-                0x0000000008009874                DMA1_Stream1_IRQHandler
-                0x0000000008009874                UART4_IRQHandler
-                0x0000000008009874                TIM3_IRQHandler
-                0x0000000008009874                RCC_IRQHandler
-                0x0000000008009874                TIM8_BRK_TIM12_IRQHandler
-                0x0000000008009874                Default_Handler
-                0x0000000008009874                CEC_IRQHandler
-                0x0000000008009874                EXTI15_10_IRQHandler
-                0x0000000008009874                ADC_IRQHandler
-                0x0000000008009874                DMA1_Stream7_IRQHandler
-                0x0000000008009874                TIM7_IRQHandler
-                0x0000000008009874                CAN2_TX_IRQHandler
-                0x0000000008009874                TIM5_IRQHandler
-                0x0000000008009874                DMA2_Stream7_IRQHandler
-                0x0000000008009874                I2C3_EV_IRQHandler
-                0x0000000008009874                EXTI9_5_IRQHandler
-                0x0000000008009874                RTC_WKUP_IRQHandler
-                0x0000000008009874                SPDIF_RX_IRQHandler
-                0x0000000008009874                SPI2_IRQHandler
-                0x0000000008009874                OTG_HS_EP1_IN_IRQHandler
-                0x0000000008009874                DMA1_Stream0_IRQHandler
-                0x0000000008009874                CAN1_TX_IRQHandler
-                0x0000000008009874                EXTI4_IRQHandler
-                0x0000000008009874                OTG_HS_EP1_OUT_IRQHandler
-                0x0000000008009874                WWDG_IRQHandler
-                0x0000000008009874                TIM2_IRQHandler
-                0x0000000008009874                OTG_FS_WKUP_IRQHandler
-                0x0000000008009874                TIM1_TRG_COM_TIM11_IRQHandler
-                0x0000000008009874                OTG_HS_IRQHandler
-                0x0000000008009874                EXTI1_IRQHandler
-                0x0000000008009874                USART2_IRQHandler
-                0x0000000008009874                I2C2_ER_IRQHandler
-                0x0000000008009874                DMA2_Stream1_IRQHandler
-                0x0000000008009874                CAN1_SCE_IRQHandler
-                0x0000000008009874                FLASH_IRQHandler
-                0x0000000008009874                DMA2_Stream4_IRQHandler
-                0x0000000008009874                USART1_IRQHandler
-                0x0000000008009874                OTG_FS_IRQHandler
-                0x0000000008009874                SPI3_IRQHandler
-                0x0000000008009874                DMA1_Stream4_IRQHandler
-                0x0000000008009874                I2C1_ER_IRQHandler
-                0x0000000008009874                FMC_IRQHandler
-                0x0000000008009874                DMA2_Stream6_IRQHandler
-                0x0000000008009874                SAI1_IRQHandler
-                0x0000000008009874                DMA1_Stream3_IRQHandler
-                0x0000000008009874                FMPI2C1_Error_IRQHandler
- *fill*         0x0000000008009876        0x2 
- .text.__errno  0x0000000008009878        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
-                0x0000000008009878                __errno
+                0x0000000008009918        0x2 startup/startup_stm32f446xx.o
+                0x0000000008009918                RTC_Alarm_IRQHandler
+                0x0000000008009918                EXTI2_IRQHandler
+                0x0000000008009918                TIM8_CC_IRQHandler
+                0x0000000008009918                SPI4_IRQHandler
+                0x0000000008009918                TIM1_CC_IRQHandler
+                0x0000000008009918                DMA2_Stream5_IRQHandler
+                0x0000000008009918                DMA1_Stream5_IRQHandler
+                0x0000000008009918                PVD_IRQHandler
+                0x0000000008009918                SDIO_IRQHandler
+                0x0000000008009918                TAMP_STAMP_IRQHandler
+                0x0000000008009918                CAN2_RX1_IRQHandler
+                0x0000000008009918                EXTI3_IRQHandler
+                0x0000000008009918                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008009918                TIM1_UP_TIM10_IRQHandler
+                0x0000000008009918                TIM8_UP_TIM13_IRQHandler
+                0x0000000008009918                I2C3_ER_IRQHandler
+                0x0000000008009918                FMPI2C1_Event_IRQHandler
+                0x0000000008009918                EXTI0_IRQHandler
+                0x0000000008009918                I2C2_EV_IRQHandler
+                0x0000000008009918                DMA1_Stream2_IRQHandler
+                0x0000000008009918                CAN1_RX0_IRQHandler
+                0x0000000008009918                FPU_IRQHandler
+                0x0000000008009918                OTG_HS_WKUP_IRQHandler
+                0x0000000008009918                CAN2_SCE_IRQHandler
+                0x0000000008009918                DMA2_Stream2_IRQHandler
+                0x0000000008009918                SPI1_IRQHandler
+                0x0000000008009918                TIM6_DAC_IRQHandler
+                0x0000000008009918                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008009918                DCMI_IRQHandler
+                0x0000000008009918                CAN2_RX0_IRQHandler
+                0x0000000008009918                DMA2_Stream3_IRQHandler
+                0x0000000008009918                SAI2_IRQHandler
+                0x0000000008009918                USART6_IRQHandler
+                0x0000000008009918                USART3_IRQHandler
+                0x0000000008009918                CAN1_RX1_IRQHandler
+                0x0000000008009918                UART5_IRQHandler
+                0x0000000008009918                DMA2_Stream0_IRQHandler
+                0x0000000008009918                TIM4_IRQHandler
+                0x0000000008009918                QUADSPI_IRQHandler
+                0x0000000008009918                I2C1_EV_IRQHandler
+                0x0000000008009918                DMA1_Stream6_IRQHandler
+                0x0000000008009918                DMA1_Stream1_IRQHandler
+                0x0000000008009918                UART4_IRQHandler
+                0x0000000008009918                TIM3_IRQHandler
+                0x0000000008009918                RCC_IRQHandler
+                0x0000000008009918                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008009918                Default_Handler
+                0x0000000008009918                CEC_IRQHandler
+                0x0000000008009918                EXTI15_10_IRQHandler
+                0x0000000008009918                ADC_IRQHandler
+                0x0000000008009918                DMA1_Stream7_IRQHandler
+                0x0000000008009918                TIM7_IRQHandler
+                0x0000000008009918                CAN2_TX_IRQHandler
+                0x0000000008009918                TIM5_IRQHandler
+                0x0000000008009918                DMA2_Stream7_IRQHandler
+                0x0000000008009918                I2C3_EV_IRQHandler
+                0x0000000008009918                EXTI9_5_IRQHandler
+                0x0000000008009918                RTC_WKUP_IRQHandler
+                0x0000000008009918                SPDIF_RX_IRQHandler
+                0x0000000008009918                SPI2_IRQHandler
+                0x0000000008009918                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008009918                DMA1_Stream0_IRQHandler
+                0x0000000008009918                CAN1_TX_IRQHandler
+                0x0000000008009918                EXTI4_IRQHandler
+                0x0000000008009918                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008009918                WWDG_IRQHandler
+                0x0000000008009918                TIM2_IRQHandler
+                0x0000000008009918                OTG_FS_WKUP_IRQHandler
+                0x0000000008009918                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008009918                OTG_HS_IRQHandler
+                0x0000000008009918                EXTI1_IRQHandler
+                0x0000000008009918                USART2_IRQHandler
+                0x0000000008009918                I2C2_ER_IRQHandler
+                0x0000000008009918                DMA2_Stream1_IRQHandler
+                0x0000000008009918                CAN1_SCE_IRQHandler
+                0x0000000008009918                FLASH_IRQHandler
+                0x0000000008009918                DMA2_Stream4_IRQHandler
+                0x0000000008009918                USART1_IRQHandler
+                0x0000000008009918                OTG_FS_IRQHandler
+                0x0000000008009918                SPI3_IRQHandler
+                0x0000000008009918                DMA1_Stream4_IRQHandler
+                0x0000000008009918                I2C1_ER_IRQHandler
+                0x0000000008009918                FMC_IRQHandler
+                0x0000000008009918                DMA2_Stream6_IRQHandler
+                0x0000000008009918                SAI1_IRQHandler
+                0x0000000008009918                DMA1_Stream3_IRQHandler
+                0x0000000008009918                FMPI2C1_Error_IRQHandler
+ *fill*         0x000000000800991a        0x2 
+ .text.__errno  0x000000000800991c        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+                0x000000000800991c                __errno
  .text.__libc_init_array
-                0x0000000008009884       0x50 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
-                0x0000000008009884                __libc_init_array
- .text.memset   0x00000000080098d4       0x9c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
-                0x00000000080098d4                memset
- .text.printf   0x0000000008009970       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
-                0x0000000008009970                printf
- .text._puts_r  0x0000000008009998       0x9c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
-                0x0000000008009998                _puts_r
- .text.puts     0x0000000008009a34       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
-                0x0000000008009a34                puts
- .text.sprintf  0x0000000008009a44       0x4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
-                0x0000000008009a44                sprintf
- .text.strcpy   0x0000000008009a90       0xbc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strcpy.o)
-                0x0000000008009a90                strcpy
- *fill*         0x0000000008009b4c        0x4 
+                0x0000000008009928       0x50 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+                0x0000000008009928                __libc_init_array
+ .text.memset   0x0000000008009978       0x9c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+                0x0000000008009978                memset
+ .text.printf   0x0000000008009a14       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
+                0x0000000008009a14                printf
+ .text._puts_r  0x0000000008009a3c       0x9c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+                0x0000000008009a3c                _puts_r
+ .text.puts     0x0000000008009ad8       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+                0x0000000008009ad8                puts
+ .text.sprintf  0x0000000008009ae8       0x4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
+                0x0000000008009ae8                sprintf
+ .text.strcpy   0x0000000008009b34       0xbc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-strcpy.o)
+                0x0000000008009b34                strcpy
  .text._svfprintf_r
-                0x0000000008009b50     0x1494 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
-                0x0000000008009b50                _svfprintf_r
- *fill*         0x000000000800afe4        0x4 
+                0x0000000008009bf0     0x1494 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x0000000008009bf0                _svfprintf_r
+ *fill*         0x000000000800b084        0x4 
  .text._vfprintf_r
-                0x000000000800afe8     0x158c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
-                0x000000000800afe8                _vfprintf_r
+                0x000000000800b088     0x158c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800b088                _vfprintf_r
  .text.__sbprintf
-                0x000000000800c574       0x84 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800c614       0x84 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x000000000800c5f8       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
-                0x000000000800c5f8                __swsetup_r
+                0x000000000800c698       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
+                0x000000000800c698                __swsetup_r
  .text.startup.register_fini
-                0x000000000800c6c0       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x000000000800c6d4        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
-                0x000000000800c6d4                atexit
- .text.quorem   0x000000000800c6e0      0x128 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
- .text._dtoa_r  0x000000000800c808      0xe4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
-                0x000000000800c808                _dtoa_r
+                0x000000000800c760       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x000000000800c774        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+                0x000000000800c774                atexit
+ .text.quorem   0x000000000800c780      0x128 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x000000000800c8a8      0xe4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x000000000800c8a8                _dtoa_r
  .text.__sflush_r
-                0x000000000800d654      0x140 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000000800d654                __sflush_r
+                0x000000000800d6f4      0x140 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000000800d6f4                __sflush_r
  .text._fflush_r
-                0x000000000800d794       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000000800d794                _fflush_r
+                0x000000000800d834       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000000800d834                _fflush_r
  .text._cleanup_r
-                0x000000000800d7e8        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800d7e8                _cleanup_r
+                0x000000000800d888        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800d888                _cleanup_r
  .text.std.isra.0
-                0x000000000800d7f4       0x50 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
- .text.__sinit  0x000000000800d844       0x58 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800d844                __sinit
+                0x000000000800d894       0x50 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+ .text.__sinit  0x000000000800d8e4       0x58 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800d8e4                __sinit
  .text.__sfp_lock_acquire
-                0x000000000800d89c        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800d89c                __sfp_lock_acquire
+                0x000000000800d93c        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800d93c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x000000000800d8a8        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800d8a8                __sfp_lock_release
+                0x000000000800d948        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800d948                __sfp_lock_release
  .text.__libc_fini_array
-                0x000000000800d8b4       0x34 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
-                0x000000000800d8b4                __libc_fini_array
+                0x000000000800d954       0x34 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+                0x000000000800d954                __libc_fini_array
  .text._malloc_trim_r
-                0x000000000800d8e8       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000000800d8e8                _malloc_trim_r
- .text._free_r  0x000000000800d988      0x1cc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000000800d988                _free_r
+                0x000000000800d988       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000000800d988                _malloc_trim_r
+ .text._free_r  0x000000000800da28      0x1cc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000000800da28                _free_r
  .text.__sfvwrite_r
-                0x000000000800db54      0x2f0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
-                0x000000000800db54                __sfvwrite_r
+                0x000000000800dbf4      0x2f0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
+                0x000000000800dbf4                __sfvwrite_r
  .text._fwalk_reent
-                0x000000000800de44       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
-                0x000000000800de44                _fwalk_reent
+                0x000000000800dee4       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
+                0x000000000800dee4                _fwalk_reent
  .text._localeconv_r
-                0x000000000800de98       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
-                0x000000000800de98                _localeconv_r
+                0x000000000800df38       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
+                0x000000000800df38                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x000000000800deb4        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800deb4                __retarget_lock_init_recursive
+                0x000000000800df54        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800df54                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x000000000800deb8        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800deb8                __retarget_lock_close_recursive
+                0x000000000800df58        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800df58                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x000000000800debc        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800debc                __retarget_lock_acquire_recursive
+                0x000000000800df5c        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800df5c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000800dec0        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800dec0                __retarget_lock_release_recursive
+                0x000000000800df60        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800df60                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x000000000800dec4       0x5c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000000800dec4                __swhatbuf_r
+                0x000000000800df64       0x5c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000000800df64                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000800df20       0x94 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000000800df20                __smakebuf_r
+                0x000000000800dfc0       0x94 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000000800dfc0                __smakebuf_r
  .text._malloc_r
-                0x000000000800dfb4      0x560 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
-                0x000000000800dfb4                _malloc_r
- .text.memmove  0x000000000800e514       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
-                0x000000000800e514                memmove
+                0x000000000800e054      0x560 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
+                0x000000000800e054                _malloc_r
+ .text.memmove  0x000000000800e5b4       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
+                0x000000000800e5b4                memmove
  .text.__malloc_lock
-                0x000000000800e5dc        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000000800e5dc                __malloc_lock
+                0x000000000800e67c        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000000800e67c                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800e5e8        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000000800e5e8                __malloc_unlock
- .text._Balloc  0x000000000800e5f4       0x4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e5f4                _Balloc
- .text._Bfree   0x000000000800e640       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e640                _Bfree
+                0x000000000800e688        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000000800e688                __malloc_unlock
+ .text._Balloc  0x000000000800e694       0x4c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e694                _Balloc
+ .text._Bfree   0x000000000800e6e0       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e6e0                _Bfree
  .text.__multadd
-                0x000000000800e654       0x80 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e654                __multadd
+                0x000000000800e6f4       0x80 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e6f4                __multadd
  .text.__hi0bits
-                0x000000000800e6d4       0x40 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e6d4                __hi0bits
+                0x000000000800e774       0x40 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e774                __hi0bits
  .text.__lo0bits
-                0x000000000800e714       0x60 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e714                __lo0bits
- .text.__i2b    0x000000000800e774       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e774                __i2b
+                0x000000000800e7b4       0x60 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e7b4                __lo0bits
+ .text.__i2b    0x000000000800e814       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e814                __i2b
  .text.__multiply
-                0x000000000800e788      0x124 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e788                __multiply
+                0x000000000800e828      0x124 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e828                __multiply
  .text.__pow5mult
-                0x000000000800e8ac       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e8ac                __pow5mult
+                0x000000000800e94c       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e94c                __pow5mult
  .text.__lshift
-                0x000000000800e94c       0xa4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e94c                __lshift
- .text.__mcmp   0x000000000800e9f0       0x38 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800e9f0                __mcmp
- .text.__mdiff  0x000000000800ea28      0x108 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800ea28                __mdiff
- .text.__d2b    0x000000000800eb30       0xbc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800eb30                __d2b
+                0x000000000800e9ec       0xa4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800e9ec                __lshift
+ .text.__mcmp   0x000000000800ea90       0x38 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ea90                __mcmp
+ .text.__mdiff  0x000000000800eac8      0x108 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800eac8                __mdiff
+ .text.__d2b    0x000000000800ebd0       0xbc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ebd0                __d2b
  .text._realloc_r
-                0x000000000800ebec      0x34c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
-                0x000000000800ebec                _realloc_r
- .text._sbrk_r  0x000000000800ef38       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
-                0x000000000800ef38                _sbrk_r
- .text.__sread  0x000000000800ef5c       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800ef5c                __sread
+                0x000000000800ec8c      0x34c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
+                0x000000000800ec8c                _realloc_r
+ .text._sbrk_r  0x000000000800efd8       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
+                0x000000000800efd8                _sbrk_r
+ .text.__sread  0x000000000800effc       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800effc                __sread
  .text.__swrite
-                0x000000000800ef80       0x3c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800ef80                __swrite
- .text.__sseek  0x000000000800efbc       0x20 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800efbc                __sseek
+                0x000000000800f020       0x3c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800f020                __swrite
+ .text.__sseek  0x000000000800f05c       0x20 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800f05c                __sseek
  .text.__sclose
-                0x000000000800efdc        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800efdc                __sclose
+                0x000000000800f07c        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800f07c                __sclose
  .text.__ssprint_r
-                0x000000000800efe4       0xfc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
-                0x000000000800efe4                __ssprint_r
+                0x000000000800f084       0xfc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
+                0x000000000800f084                __ssprint_r
  .text.__sprint_r.part.0
-                0x000000000800f0e0       0x80 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000000800f180       0x80 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x000000000800f160       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
-                0x000000000800f160                __sprint_r
+                0x000000000800f200       0x14 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000000800f200                __sprint_r
  .text._write_r
-                0x000000000800f174       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
-                0x000000000800f174                _write_r
+                0x000000000800f214       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
+                0x000000000800f214                _write_r
  .text.__register_exitproc
-                0x000000000800f1a0       0xc4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
-                0x000000000800f1a0                __register_exitproc
+                0x000000000800f240       0xc4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+                0x000000000800f240                __register_exitproc
  .text._calloc_r
-                0x000000000800f264       0x60 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
-                0x000000000800f264                _calloc_r
+                0x000000000800f304       0x60 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
+                0x000000000800f304                _calloc_r
  .text._close_r
-                0x000000000800f2c4       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
-                0x000000000800f2c4                _close_r
+                0x000000000800f364       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
+                0x000000000800f364                _close_r
  .text._fclose_r
-                0x000000000800f2e8       0xc4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
-                0x000000000800f2e8                _fclose_r
+                0x000000000800f388       0xc4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
+                0x000000000800f388                _fclose_r
  .text.__fputwc
-                0x000000000800f3ac       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000000800f3ac                __fputwc
+                0x000000000800f44c       0xa0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000000800f44c                __fputwc
  .text._fputwc_r
-                0x000000000800f44c       0x68 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000000800f44c                _fputwc_r
+                0x000000000800f4ec       0x68 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000000800f4ec                _fputwc_r
  .text._fstat_r
-                0x000000000800f4b4       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
-                0x000000000800f4b4                _fstat_r
+                0x000000000800f554       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
+                0x000000000800f554                _fstat_r
  .text._isatty_r
-                0x000000000800f4dc       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
-                0x000000000800f4dc                _isatty_r
+                0x000000000800f57c       0x24 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
+                0x000000000800f57c                _isatty_r
  .text.__locale_mb_cur_max
-                0x000000000800f500       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
-                0x000000000800f500                __locale_mb_cur_max
+                0x000000000800f5a0       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000000800f5a0                __locale_mb_cur_max
  .text._lseek_r
-                0x000000000800f51c       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
-                0x000000000800f51c                _lseek_r
+                0x000000000800f5bc       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
+                0x000000000800f5bc                _lseek_r
  .text.__ascii_mbtowc
-                0x000000000800f548       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
-                0x000000000800f548                __ascii_mbtowc
- .text._read_r  0x000000000800f574       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
-                0x000000000800f574                _read_r
+                0x000000000800f5e8       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
+                0x000000000800f5e8                __ascii_mbtowc
+ .text._read_r  0x000000000800f614       0x2c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
+                0x000000000800f614                _read_r
  .text.__swbuf_r
-                0x000000000800f5a0       0xb0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
-                0x000000000800f5a0                __swbuf_r
+                0x000000000800f640       0xb0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
+                0x000000000800f640                __swbuf_r
  .text._wcrtomb_r
-                0x000000000800f650       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
-                0x000000000800f650                _wcrtomb_r
+                0x000000000800f6f0       0x54 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
+                0x000000000800f6f0                _wcrtomb_r
  .text.__ascii_wctomb
-                0x000000000800f6a4       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
-                0x000000000800f6a4                __ascii_wctomb
+                0x000000000800f744       0x1c /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
+                0x000000000800f744                __ascii_wctomb
  *(.glue_7)
- .glue_7        0x000000000800f6c0        0x0 linker stubs
+ .glue_7        0x000000000800f760        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800f6c0        0x0 linker stubs
+ .glue_7t       0x000000000800f760        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800f6c0        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x000000000800f760        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x000000000800f6c0        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000000000800f6c0                _init
- .init          0x000000000800f6c4        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x000000000800f760        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000000000800f760                _init
+ .init          0x000000000800f764        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x000000000800f6cc        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000000000800f6cc                _fini
- .fini          0x000000000800f6d0        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x000000000800f6d8                . = ALIGN (0x4)
-                0x000000000800f6d8                _etext = .
+ .fini          0x000000000800f76c        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000000000800f76c                _fini
+ .fini          0x000000000800f770        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x000000000800f778                . = ALIGN (0x4)
+                0x000000000800f778                _etext = .
 
-.vfp11_veneer   0x000000000800f6d8        0x0
- .vfp11_veneer  0x000000000800f6d8        0x0 linker stubs
+.vfp11_veneer   0x000000000800f778        0x0
+ .vfp11_veneer  0x000000000800f778        0x0 linker stubs
 
-.v4_bx          0x000000000800f6d8        0x0
- .v4_bx         0x000000000800f6d8        0x0 linker stubs
+.v4_bx          0x000000000800f778        0x0
+ .v4_bx         0x000000000800f778        0x0 linker stubs
 
-.iplt           0x000000000800f6d8        0x0
- .iplt          0x000000000800f6d8        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x000000000800f778        0x0
+ .iplt          0x000000000800f778        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x000000000800f6d8      0x468
-                0x000000000800f6d8                . = ALIGN (0x4)
+.rodata         0x000000000800f778      0x468
+                0x000000000800f778                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000800f6d8       0x46 src/main.o
- *fill*         0x000000000800f71e        0x2 
- .rodata        0x000000000800f720       0x18 src/system_stm32f4xx.o
-                0x000000000800f720                AHBPrescTable
-                0x000000000800f730                APBPrescTable
- .rodata        0x000000000800f738      0x155 src/vl53l0x_class.o
+ .rodata        0x000000000800f778       0x46 src/main.o
+ *fill*         0x000000000800f7be        0x2 
+ .rodata        0x000000000800f7c0       0x18 src/system_stm32f4xx.o
+                0x000000000800f7c0                AHBPrescTable
+                0x000000000800f7d0                APBPrescTable
+ .rodata        0x000000000800f7d8      0x155 src/vl53l0x_class.o
  *(.rodata*)
- *fill*         0x000000000800f88d        0x3 
+ *fill*         0x000000000800f92d        0x3 
  .rodata._global_impure_ptr
-                0x000000000800f890        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
-                0x000000000800f890                _global_impure_ptr
+                0x000000000800f930        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+                0x000000000800f930                _global_impure_ptr
  .rodata._puts_r.str1.4
-                0x000000000800f894        0x2 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
- *fill*         0x000000000800f896        0x2 
+                0x000000000800f934        0x2 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-puts.o)
+ *fill*         0x000000000800f936        0x2 
  .rodata._svfprintf_r.str1.4
-                0x000000000800f898       0x42 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
- *fill*         0x000000000800f8da        0x2 
+                0x000000000800f938       0x42 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+ *fill*         0x000000000800f97a        0x2 
  .rodata.blanks.8346
-                0x000000000800f8dc       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x000000000800f97c       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
  .rodata.zeroes.8347
-                0x000000000800f8ec       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x000000000800f98c       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
  .rodata._vfprintf_r.str1.4
-                0x000000000800f8fc       0x42 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800f99c       0x42 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata.blanks.8361
-                0x000000000800f8fc       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800f99c       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata.zeroes.8362
-                0x000000000800f90c       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800f9ac       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x000000000800f91c       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x000000000800f9bc       0x10 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
                                          0x12 (size before relaxing)
- *fill*         0x000000000800f92c        0x4 
+ *fill*         0x000000000800f9cc        0x4 
  .rodata.__mprec_bigtens
-                0x000000000800f930       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800f930                __mprec_bigtens
+                0x000000000800f9d0       0x28 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800f9d0                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000000800f958       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800f958                __mprec_tens
+                0x000000000800f9f8       0xc8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800f9f8                __mprec_tens
  .rodata.p05.7178
-                0x000000000800fa20        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800fac0        0xc /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
  .rodata._setlocale_r.str1.4
-                0x000000000800fa2c        0xa /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000000800facc        0xa /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
                                           0xd (size before relaxing)
- *fill*         0x000000000800fa36        0x2 
+ *fill*         0x000000000800fad6        0x2 
  .rodata.str1.4
-                0x000000000800fa38        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000000800fad8        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
                                           0x2 (size before relaxing)
  .rodata._ctype_
-                0x000000000800fa3c      0x101 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
-                0x000000000800fa3c                _ctype_
-                0x000000000800fb40                . = ALIGN (0x4)
- *fill*         0x000000000800fb3d        0x3 
+                0x000000000800fadc      0x101 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
+                0x000000000800fadc                _ctype_
+                0x000000000800fbe0                . = ALIGN (0x4)
+ *fill*         0x000000000800fbdd        0x3 
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800fb40        0x8
-                0x000000000800fb40                __exidx_start = .
+.ARM            0x000000000800fbe0        0x8
+                0x000000000800fbe0                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x000000000800fb40        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
-                0x000000000800fb48                __exidx_end = .
+ .ARM.exidx     0x000000000800fbe0        0x8 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+                0x000000000800fbe8                __exidx_end = .
 
-.rel.dyn        0x000000000800fb48        0x0
- .rel.iplt      0x000000000800fb48        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x000000000800fbe8        0x0
+ .rel.iplt      0x000000000800fbe8        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.preinit_array  0x000000000800fb48        0x0
-                0x000000000800fb48                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x000000000800fbe8        0x0
+                0x000000000800fbe8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800fb48                PROVIDE (__preinit_array_end, .)
+                0x000000000800fbe8                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000000000800fb48        0x8
-                0x000000000800fb48                PROVIDE (__init_array_start, .)
+.init_array     0x000000000800fbe8        0x8
+                0x000000000800fbe8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  .init_array.00000
-                0x000000000800fb48        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+                0x000000000800fbe8        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x000000000800fb4c        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x000000000800fb50                PROVIDE (__init_array_end, .)
+ .init_array    0x000000000800fbec        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x000000000800fbf0                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000000000800fb50        0x4
-                0x000000000800fb50                PROVIDE (__fini_array_start, .)
+.fini_array     0x000000000800fbf0        0x4
+                0x000000000800fbf0                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800fb50        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x000000000800fb54                PROVIDE (__fini_array_end, .)
-                0x000000000800fb54                _sidata = LOADADDR (.data)
+ .fini_array    0x000000000800fbf0        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x000000000800fbf4                PROVIDE (__fini_array_end, .)
+                0x000000000800fbf4                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0xc78 load address 0x000000000800fb54
+.data           0x0000000020000000      0xc78 load address 0x000000000800fbf4
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -21219,14 +21219,14 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
                 0x0000000020000c78                . = ALIGN (0x4)
                 0x0000000020000c78                _edata = .
 
-.jcr            0x0000000020000c78        0x0 load address 0x00000000080107cc
+.jcr            0x0000000020000c78        0x0 load address 0x000000000801086c
  .jcr           0x0000000020000c78        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.igot.plt       0x0000000020000c78        0x0 load address 0x00000000080107cc
+.igot.plt       0x0000000020000c78        0x0 load address 0x000000000801086c
  .igot.plt      0x0000000020000c78        0x0 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x0000000020000c78                . = ALIGN (0x4)
 
-.bss            0x0000000020000c78      0x2e0 load address 0x00000000080107cc
+.bss            0x0000000020000c78      0x440 load address 0x000000000801086c
                 0x0000000020000c78                _sbss = .
                 0x0000000020000c78                __bss_start__ = _sbss
  *(.bss)
@@ -21248,7 +21248,7 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
  *(COMMON)
  COMMON         0x0000000020000ccc        0x4 HAL_Driver/Src/stm32f4xx_hal.o
                 0x0000000020000ccc                uwTick
- COMMON         0x0000000020000cd0      0x260 src/main.o
+ COMMON         0x0000000020000cd0      0x3c0 src/main.o
                 0x0000000020000cd0                scaner
                 0x0000000020000cd4                hi2c1
                 0x0000000020000d28                i
@@ -21256,33 +21256,34 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
                 0x0000000020000d8f                result
                 0x0000000020000d90                sensor1
                 0x0000000020000ef0                huart2
- COMMON         0x0000000020000f30       0x21 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x0000000020000f30                __lock___atexit_recursive_mutex
-                0x0000000020000f34                __lock___arc4random_mutex
-                0x0000000020000f38                __lock___env_recursive_mutex
-                0x0000000020000f3c                __lock___sinit_recursive_mutex
-                0x0000000020000f40                __lock___malloc_recursive_mutex
-                0x0000000020000f44                __lock___at_quick_exit_mutex
-                0x0000000020000f48                __lock___dd_hash_mutex
-                0x0000000020000f4c                __lock___tz_mutex
-                0x0000000020000f50                __lock___sfp_recursive_mutex
- *fill*         0x0000000020000f51        0x3 
- COMMON         0x0000000020000f54        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reent.o)
-                0x0000000020000f54                errno
-                0x0000000020000f58                . = ALIGN (0x4)
-                0x0000000020000f58                _ebss = .
-                0x0000000020000f58                __bss_end__ = _ebss
+                0x0000000020000f30                sensor2
+ COMMON         0x0000000020001090       0x21 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x0000000020001090                __lock___atexit_recursive_mutex
+                0x0000000020001094                __lock___arc4random_mutex
+                0x0000000020001098                __lock___env_recursive_mutex
+                0x000000002000109c                __lock___sinit_recursive_mutex
+                0x00000000200010a0                __lock___malloc_recursive_mutex
+                0x00000000200010a4                __lock___at_quick_exit_mutex
+                0x00000000200010a8                __lock___dd_hash_mutex
+                0x00000000200010ac                __lock___tz_mutex
+                0x00000000200010b0                __lock___sfp_recursive_mutex
+ *fill*         0x00000000200010b1        0x3 
+ COMMON         0x00000000200010b4        0x4 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reent.o)
+                0x00000000200010b4                errno
+                0x00000000200010b8                . = ALIGN (0x4)
+                0x00000000200010b8                _ebss = .
+                0x00000000200010b8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000f58      0x600 load address 0x00000000080107cc
-                0x0000000020000f58                . = ALIGN (0x8)
-                0x0000000020000f58                PROVIDE (end, .)
+                0x00000000200010b8      0x600 load address 0x000000000801086c
+                0x00000000200010b8                . = ALIGN (0x8)
+                0x00000000200010b8                PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
-                0x0000000020001158                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020000f58      0x200 
-                0x0000000020001558                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020001158      0x400 
-                0x0000000020001558                . = ALIGN (0x8)
+                0x00000000200012b8                . = (. + _Min_Heap_Size)
+ *fill*         0x00000000200010b8      0x200 
+                0x00000000200016b8                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200012b8      0x400 
+                0x00000000200016b8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -21452,7 +21453,7 @@ LOAD /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64
                 0x0000000000000f44       0x22 /home/coleman/Desktop/Ac6/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(ranging_2.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1549e
+.debug_info     0x0000000000000000    0x15422
  .debug_info    0x0000000000000000     0x1184 HAL_Driver/Src/stm32f4xx_hal.o
  .debug_info    0x0000000000001184     0x1614 HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_info    0x0000000000002798      0xfd8 HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -21461,16 +21462,16 @@ OUTPUT(ranging_2.elf elf32-littlearm)
  .debug_info    0x000000000000699c     0x110a HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_info    0x0000000000007aa6     0x11a9 HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_info    0x0000000000008c4f     0x19f1 HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_info    0x000000000000a640     0x1e62 src/main.o
- .debug_info    0x000000000000c4a2     0x145d src/stm32f4xx_hal_msp.o
- .debug_info    0x000000000000d8ff      0xa2b src/stm32f4xx_it.o
- .debug_info    0x000000000000e32a      0xec9 src/syscalls.o
- .debug_info    0x000000000000f1f3      0x933 src/sysmem.o
- .debug_info    0x000000000000fb26      0xd5f src/system_stm32f4xx.o
- .debug_info    0x0000000000010885     0x4ba7 src/vl53l0x_class.o
- .debug_info    0x000000000001542c       0x72 startup/startup_stm32f446xx.o
+ .debug_info    0x000000000000a640     0x1e9f src/main.o
+ .debug_info    0x000000000000c4df     0x145d src/stm32f4xx_hal_msp.o
+ .debug_info    0x000000000000d93c      0xa2b src/stm32f4xx_it.o
+ .debug_info    0x000000000000e367      0xec9 src/syscalls.o
+ .debug_info    0x000000000000f230      0x933 src/sysmem.o
+ .debug_info    0x000000000000fb63      0xd5f src/system_stm32f4xx.o
+ .debug_info    0x00000000000108c2     0x4aee src/vl53l0x_class.o
+ .debug_info    0x00000000000153b0       0x72 startup/startup_stm32f446xx.o
 
-.debug_abbrev   0x0000000000000000     0x2765
+.debug_abbrev   0x0000000000000000     0x274f
  .debug_abbrev  0x0000000000000000      0x2bb HAL_Driver/Src/stm32f4xx_hal.o
  .debug_abbrev  0x00000000000002bb      0x39d HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_abbrev  0x0000000000000658      0x287 HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -21479,14 +21480,14 @@ OUTPUT(ranging_2.elf elf32-littlearm)
  .debug_abbrev  0x0000000000000d6c      0x303 HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_abbrev  0x000000000000106f      0x27a HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_abbrev  0x00000000000012e9      0x2f8 HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_abbrev  0x00000000000015e1      0x384 src/main.o
- .debug_abbrev  0x0000000000001965      0x23e src/stm32f4xx_hal_msp.o
- .debug_abbrev  0x0000000000001ba3      0x1ec src/stm32f4xx_it.o
- .debug_abbrev  0x0000000000001d8f      0x297 src/syscalls.o
- .debug_abbrev  0x0000000000002026      0x1f1 src/sysmem.o
- .debug_abbrev  0x0000000000002217      0x205 src/system_stm32f4xx.o
- .debug_abbrev  0x000000000000241c      0x337 src/vl53l0x_class.o
- .debug_abbrev  0x0000000000002753       0x12 startup/startup_stm32f446xx.o
+ .debug_abbrev  0x00000000000015e1      0x36e src/main.o
+ .debug_abbrev  0x000000000000194f      0x23e src/stm32f4xx_hal_msp.o
+ .debug_abbrev  0x0000000000001b8d      0x1ec src/stm32f4xx_it.o
+ .debug_abbrev  0x0000000000001d79      0x297 src/syscalls.o
+ .debug_abbrev  0x0000000000002010      0x1f1 src/sysmem.o
+ .debug_abbrev  0x0000000000002201      0x205 src/system_stm32f4xx.o
+ .debug_abbrev  0x0000000000002406      0x337 src/vl53l0x_class.o
+ .debug_abbrev  0x000000000000273d       0x12 startup/startup_stm32f446xx.o
 
 .debug_aranges  0x0000000000000000      0xd40
  .debug_aranges
@@ -21540,7 +21541,7 @@ OUTPUT(ranging_2.elf elf32-littlearm)
  .debug_ranges  0x00000000000008d8      0x350 src/vl53l0x_class.o
  .debug_ranges  0x0000000000000c28       0x20 startup/startup_stm32f446xx.o
 
-.debug_macro    0x0000000000000000     0x5d86
+.debug_macro    0x0000000000000000     0x5d92
  .debug_macro   0x0000000000000000      0x561 HAL_Driver/Src/stm32f4xx_hal.o
  .debug_macro   0x0000000000000561      0x501 HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_macro   0x0000000000000a62      0x539 HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -21555,39 +21556,39 @@ OUTPUT(ranging_2.elf elf32-littlearm)
  .debug_macro   0x0000000000002f32       0x16 src/main.o
  .debug_macro   0x0000000000002f48       0x29 src/main.o
  .debug_macro   0x0000000000002f71      0x1e1 src/main.o
- .debug_macro   0x0000000000003152       0x64 src/main.o
- .debug_macro   0x00000000000031b6       0x76 src/main.o
- .debug_macro   0x000000000000322c      0x29c src/main.o
- .debug_macro   0x00000000000034c8      0x203 src/main.o
- .debug_macro   0x00000000000036cb       0x16 src/main.o
- .debug_macro   0x00000000000036e1       0x22 src/main.o
- .debug_macro   0x0000000000003703       0x10 src/main.o
- .debug_macro   0x0000000000003713      0x1df src/main.o
- .debug_macro   0x00000000000038f2      0x557 src/stm32f4xx_hal_msp.o
- .debug_macro   0x0000000000003e49      0x561 src/stm32f4xx_it.o
- .debug_macro   0x00000000000043aa      0x236 src/syscalls.o
- .debug_macro   0x00000000000045e0       0x52 src/syscalls.o
- .debug_macro   0x0000000000004632       0x8d src/syscalls.o
- .debug_macro   0x00000000000046bf       0x57 src/syscalls.o
- .debug_macro   0x0000000000004716      0x174 src/syscalls.o
- .debug_macro   0x000000000000488a       0x10 src/syscalls.o
- .debug_macro   0x000000000000489a       0x10 src/syscalls.o
- .debug_macro   0x00000000000048aa       0x10 src/syscalls.o
- .debug_macro   0x00000000000048ba       0x35 src/syscalls.o
- .debug_macro   0x00000000000048ef      0x122 src/syscalls.o
- .debug_macro   0x0000000000004a11       0x10 src/syscalls.o
- .debug_macro   0x0000000000004a21      0x241 src/syscalls.o
- .debug_macro   0x0000000000004c62       0x1c src/syscalls.o
- .debug_macro   0x0000000000004c7e       0x10 src/syscalls.o
- .debug_macro   0x0000000000004c8e      0x159 src/syscalls.o
- .debug_macro   0x0000000000004de7       0x16 src/syscalls.o
- .debug_macro   0x0000000000004dfd       0x88 src/syscalls.o
- .debug_macro   0x0000000000004e85      0x1a1 src/sysmem.o
- .debug_macro   0x0000000000005026      0x23b src/sysmem.o
- .debug_macro   0x0000000000005261      0x507 src/system_stm32f4xx.o
- .debug_macro   0x0000000000005768      0x61e src/vl53l0x_class.o
+ .debug_macro   0x0000000000003152       0x70 src/main.o
+ .debug_macro   0x00000000000031c2       0x76 src/main.o
+ .debug_macro   0x0000000000003238      0x29c src/main.o
+ .debug_macro   0x00000000000034d4      0x203 src/main.o
+ .debug_macro   0x00000000000036d7       0x16 src/main.o
+ .debug_macro   0x00000000000036ed       0x22 src/main.o
+ .debug_macro   0x000000000000370f       0x10 src/main.o
+ .debug_macro   0x000000000000371f      0x1df src/main.o
+ .debug_macro   0x00000000000038fe      0x557 src/stm32f4xx_hal_msp.o
+ .debug_macro   0x0000000000003e55      0x561 src/stm32f4xx_it.o
+ .debug_macro   0x00000000000043b6      0x236 src/syscalls.o
+ .debug_macro   0x00000000000045ec       0x52 src/syscalls.o
+ .debug_macro   0x000000000000463e       0x8d src/syscalls.o
+ .debug_macro   0x00000000000046cb       0x57 src/syscalls.o
+ .debug_macro   0x0000000000004722      0x174 src/syscalls.o
+ .debug_macro   0x0000000000004896       0x10 src/syscalls.o
+ .debug_macro   0x00000000000048a6       0x10 src/syscalls.o
+ .debug_macro   0x00000000000048b6       0x10 src/syscalls.o
+ .debug_macro   0x00000000000048c6       0x35 src/syscalls.o
+ .debug_macro   0x00000000000048fb      0x122 src/syscalls.o
+ .debug_macro   0x0000000000004a1d       0x10 src/syscalls.o
+ .debug_macro   0x0000000000004a2d      0x241 src/syscalls.o
+ .debug_macro   0x0000000000004c6e       0x1c src/syscalls.o
+ .debug_macro   0x0000000000004c8a       0x10 src/syscalls.o
+ .debug_macro   0x0000000000004c9a      0x159 src/syscalls.o
+ .debug_macro   0x0000000000004df3       0x16 src/syscalls.o
+ .debug_macro   0x0000000000004e09       0x88 src/syscalls.o
+ .debug_macro   0x0000000000004e91      0x1a1 src/sysmem.o
+ .debug_macro   0x0000000000005032      0x23b src/sysmem.o
+ .debug_macro   0x000000000000526d      0x507 src/system_stm32f4xx.o
+ .debug_macro   0x0000000000005774      0x61e src/vl53l0x_class.o
 
-.debug_line     0x0000000000000000     0xdb69
+.debug_line     0x0000000000000000     0xdb82
  .debug_line    0x0000000000000000      0xd45 HAL_Driver/Src/stm32f4xx_hal.o
  .debug_line    0x0000000000000d45      0xe7e HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_line    0x0000000000001bc3      0xd32 HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -21596,16 +21597,16 @@ OUTPUT(ranging_2.elf elf32-littlearm)
  .debug_line    0x0000000000004ff5      0xdae HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_line    0x0000000000005da3      0xf60 HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_line    0x0000000000006d03     0x1449 HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_line    0x000000000000814c      0xd92 src/main.o
- .debug_line    0x0000000000008ede      0xc16 src/stm32f4xx_hal_msp.o
- .debug_line    0x0000000000009af4      0xc6f src/stm32f4xx_it.o
- .debug_line    0x000000000000a763      0x5cb src/syscalls.o
- .debug_line    0x000000000000ad2e      0x3eb src/sysmem.o
- .debug_line    0x000000000000b119      0xb8d src/system_stm32f4xx.o
- .debug_line    0x000000000000bca6     0x1e44 src/vl53l0x_class.o
- .debug_line    0x000000000000daea       0x7f startup/startup_stm32f446xx.o
+ .debug_line    0x000000000000814c      0xdad src/main.o
+ .debug_line    0x0000000000008ef9      0xc16 src/stm32f4xx_hal_msp.o
+ .debug_line    0x0000000000009b0f      0xc6f src/stm32f4xx_it.o
+ .debug_line    0x000000000000a77e      0x5cb src/syscalls.o
+ .debug_line    0x000000000000ad49      0x3eb src/sysmem.o
+ .debug_line    0x000000000000b134      0xb8d src/system_stm32f4xx.o
+ .debug_line    0x000000000000bcc1     0x1e42 src/vl53l0x_class.o
+ .debug_line    0x000000000000db03       0x7f startup/startup_stm32f446xx.o
 
-.debug_str      0x0000000000000000    0xf7faf
+.debug_str      0x0000000000000000    0xf800c
  .debug_str     0x0000000000000000    0xedf81 HAL_Driver/Src/stm32f4xx_hal.o
                                       0xee3ca (size before relaxing)
  .debug_str     0x00000000000edf81      0x3e1 HAL_Driver/Src/stm32f4xx_hal_cortex.o
@@ -21622,20 +21623,20 @@ OUTPUT(ranging_2.elf elf32-littlearm)
                                       0xedca8 (size before relaxing)
  .debug_str     0x00000000000efb6d      0x6ad HAL_Driver/Src/stm32f4xx_hal_uart.o
                                       0xee05d (size before relaxing)
- .debug_str     0x00000000000f021a     0x4a6d src/main.o
-                                      0xf2bfa (size before relaxing)
- .debug_str     0x00000000000f4c87       0x1b src/stm32f4xx_hal_msp.o
-                                      0xeea1a (size before relaxing)
- .debug_str     0x00000000000f4ca2       0xb8 src/stm32f4xx_it.o
-                                      0xee265 (size before relaxing)
- .debug_str     0x00000000000f4d5a     0x1085 src/syscalls.o
+ .debug_str     0x00000000000f021a     0x4aca src/main.o
+                                      0xf2c5f (size before relaxing)
+ .debug_str     0x00000000000f4ce4       0x1b src/stm32f4xx_hal_msp.o
+                                      0xeea4f (size before relaxing)
+ .debug_str     0x00000000000f4cff       0xb8 src/stm32f4xx_it.o
+                                      0xee29a (size before relaxing)
+ .debug_str     0x00000000000f4db7     0x1085 src/syscalls.o
                                        0x7d26 (size before relaxing)
- .debug_str     0x00000000000f5ddf       0x31 src/sysmem.o
+ .debug_str     0x00000000000f5e3c       0x31 src/sysmem.o
                                        0x6ff2 (size before relaxing)
- .debug_str     0x00000000000f5e10       0x5a src/system_stm32f4xx.o
+ .debug_str     0x00000000000f5e6d       0x5a src/system_stm32f4xx.o
                                       0xed871 (size before relaxing)
- .debug_str     0x00000000000f5e6a     0x2145 src/vl53l0x_class.o
-                                      0xf49eb (size before relaxing)
+ .debug_str     0x00000000000f5ec7     0x2145 src/vl53l0x_class.o
+                                      0xf49d2 (size before relaxing)
 
 .comment        0x0000000000000000       0x7f
  .comment       0x0000000000000000       0x7f HAL_Driver/Src/stm32f4xx_hal.o
